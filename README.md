@@ -1,2 +1,1 @@
-# ngocquang.ptit-gmail.com
-Ceph
+# Ceph
