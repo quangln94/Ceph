@@ -115,3 +115,4 @@ data fraction có thể được tính bằng:
 
 ## Tài liệu tham khảo
 - https://docs.ceph.com/docs/octopus/rados/configuration/bluestore-config-ref/
+- https://access.redhat.com/documentation/en-us/red_hat_ceph_storage/3/html/administration_guide/osd-bluestore
