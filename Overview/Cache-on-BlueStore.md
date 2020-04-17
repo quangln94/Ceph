@@ -19,7 +19,7 @@ BlueStore dựa vào Linux block cache được triển khai như sau:
 - Có thể có một số mâu thuẫn giữa BlueStore và Block cache, đặc biệt là đối với thiết bị SSD.
 - Sẽ tốt hơn nếu để BlueStore kiểm soát tổng thể RAW disk. Hơn nữa, BlueStore có thể kiểm soát dữ liệu ưu tiên để lưu vào SSD.
 
-
+<img src=https://i.imgur.com/ql6p9xB.png>
 
 ## Tài liệu tham khảo
 - http://bos.itdks.com/f422ee718b914181b58559fb1f5474cb.pdf
