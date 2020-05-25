@@ -1,6 +1,6 @@
 # Ceph
 
-Tài liệu này là tài liệu nghiên cứu và note lại từ nhiều nguồn khác nhau. Tài liệu có thể có **sai sót** trong quá trình đọc dịch do hạn chế của bản thân.
+Tài liệu này là tài liệu nghiên cứu, tham khảo và note lại từ nhiều nguồn khác nhau. Tài liệu có thể có **sai sót** trong quá trình đọc dịch do hạn chế của bản thân.
 
 ***Mục đích của tài liệu này chỉ để tham khảo cho cá nhân***.
 
