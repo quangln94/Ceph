@@ -7,6 +7,8 @@ crushtool -d crushmapdump -o crushmapdump-decompiled
 ```
 ## 2. Sửa file CRUSH map `crushmapdump-decompiled` và thêm các section sau section `root default`:
 ```sh
+$ vim crushmapdump-decompiled
+...
 root ssd {
          id -5
          alg straw
