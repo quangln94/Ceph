@@ -50,3 +50,4 @@ Trong đó:
 - https://bean-li.github.io/ceph-space/
 - https://www.codetd.com/en/article/7420688
 - https://juejin.im/entry/5bebf831f265da614c4c5bfd
+- https://docs.ceph.com/docs/master/releases/nautilus/
