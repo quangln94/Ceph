@@ -1,0 +1,1 @@
+- https://docs.ceph.com/docs/master/rados/operations/crush-map/?highlight=crush%20map
