@@ -1,0 +1,2 @@
+- https://documentation.suse.com/ses/6/html/ses-all/tuning-ceph.html
+- https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/presentation-media/Advanced-Tuning-and-Operation-guide-for-Block-Storage-using-Ceph-Boston-2017-final.pdf
