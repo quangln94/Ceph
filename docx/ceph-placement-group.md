@@ -1,0 +1,1 @@
+- https://access.redhat.com/documentation/en-us/red_hat_ceph_storage/1.3/html/storage_strategies_guide/placement_groups_pgs
