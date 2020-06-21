@@ -1,0 +1,1 @@
+- https://arvimal.blog/2015/09/01/how-to-extract-view-change-and-inject-a-monitor-map-in-a-ceph-cluster/
