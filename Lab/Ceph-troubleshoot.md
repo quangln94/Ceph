@@ -15,4 +15,4 @@ Lỗi này do `osd_failsafe_full_ratio (0.97)` < `full_ratio (0.99)`
 ```sh
 ceph osd set-full-ratio 0.9
 ```
-- [Link tham khảo](https://docs.ceph.com/docs/master/rados/operations/health-checks/#osd-out-of-order-full)
+- [Link tham khảo](https://docs.ceph.com/docs/octopus/rados/operations/health-checks/#osd-out-of-order-full)
