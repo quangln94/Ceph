@@ -5,6 +5,8 @@ Thực hiện cài đặt Ganesha thông qua Repo của Ceph
 **Khởi tạo Repo cho Ganesha**
 ```sh
 $ vim /etc/yum.repos.d/nfs_ganesha_stable.repo
+```
+```sh
 [nfs_ganesha_stable]
 name=nfs-ganesha stable repo
 baseurl=http://download.ceph.com/nfs-ganesha/rpm-V3.3-stable/octopus/el$releasever/$basearch
@@ -25,6 +27,8 @@ dnf install nfs-ganesha
 ```sh
 $ cp /etc/ganesha/ganesha.conf /etc/ganesha/ganesha.conf.org
 $ vim /etc/ganesha/ganesha.conf
+```
+```sh
 # create new
 NFS_CORE_PARAM {
     # disable NLM
