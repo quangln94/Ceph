@@ -1,6 +1,6 @@
-Ganesha
-# 1. Ganesha là gì
-# 2. Cài đặt Ganesha trên CentOS8
+# Ganesha
+## 1. Ganesha là gì
+## 2. Cài đặt Ganesha trên CentOS8
 Thực hiện cài đặt Ganesha thông qua Repo của Ceph
 **Khởi tạo Repo cho Ganesha**
 ```sh
