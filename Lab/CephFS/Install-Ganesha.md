@@ -4,7 +4,7 @@
 Thực hiện cài đặt Ganesha thông qua Repo của Ceph
 **Khởi tạo Repo cho Ganesha**
 ```sh
-cat << EOF >> /etc/yum.repos.d/nfs_ganesha_stable.repo.haha
+$ vim /etc/yum.repos.d/nfs_ganesha_stable.repo.haha
 [nfs_ganesha_stable]
 name=nfs-ganesha stable repo
 baseurl=http://download.ceph.com/nfs-ganesha/rpm-V3.3-stable/octopus/el$releasever/$basearch
@@ -16,7 +16,6 @@ name=nfs-ganesha stable noarch repo
 baseurl=http://download.ceph.com/nfs-ganesha/rpm-V3.3-stable/octopus/el$releasever/noarch
 gpgcheck=1
 gpgkey=https://download.ceph.com/keys/release.asc
-EOF
 ```
 ```sh
 dnf update -y
