@@ -1,0 +1,43 @@
+# Giám sát Cluster Ceph sử Zabbix
+Zabbix module chủ động gửi đến Zabbix-server các thông tin sau:
+- Ceph status
+- I/O operations
+- I/O bandwidth
+- OSD status
+- Storage utilization
+
+## Mô hình Lab
+|Hostname|IP|
+|--------|--|
+|Zabbix-server|192.168.10.39|
+|ceph01|192.168.10.32|
+
+## 1. Cài đặt
+**Cài đặt `zabbix-sender` trên các máy chủ chạy dịch vụ `ceph-mgr`**
+```sh
+dnf install zabbix-sender
+```
+**Enable module zabbix**
+```sh
+ceph mgr module enable zabbix
+```
+## 2. Cấu hình
+**Thực hiện trên Node Ceph**
+```sh
+ceph zabbix config-set zabbix_host 192.168.10.39
+ceph zabbix config-set identifier ceph01
+```
+Cấu hình 2 tham số sau để module có thể hoạt động
+- zabbix_host: Hostname của Zabbix-server để gửi dữ liệu. Có thể là IP hoặc hostname.
+- identifier: Hostname được sử dụng là nguồn gửi dữ liệu lên Zabbix-server. Phải giống với tên của Host trên Zabbix server.
+
+**Kiểm tra cấu hình**
+```sh
+ceph zabbix config-show
+```
+**Gửi dữ liệu thủ công nếu không muốn chờ**
+```sh
+ceph zabbix send
+```
+## Tài liệu tham khảo
+- https://docs.ceph.com/en/latest/mgr/zabbix/
