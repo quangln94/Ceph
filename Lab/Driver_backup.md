@@ -111,16 +111,16 @@ openstack volume backup restore bkfull02-vl01 90010680-6737-4b19-b760-fdad69f55b
 ```sh
 openstack volume backup create --name bkincremental03frombkfull03-vl01 vl01 --incremental
 ```
-***Bản backup này sẽ là bản `backup incremental` so với bản `bkfull03` là bản `backup full` mới nhất vừa tạo.
+***Bản backup này sẽ là bản `backup incremental` so với bản `bkfull03` là bản `backup full` mới nhất vừa tạo.***
 
-**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume
+**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume**
 
 ```sh
 rbd snap ls volumes_ssd/volume-90010680-6737-4b19-b760-fdad69f55bff
 ```
 <img src=https://i.imgur.com/bOUuSrR.png>
 
-**Kiểm tra pool `backups` và show `snapshot`
+**Kiểm tra pool `backups` và show `snapshot`**
 
 ```sh
 rbd -p backups ls - | grep f9d22999-295d-417e-9c8c-e65c2e2d9eb9
