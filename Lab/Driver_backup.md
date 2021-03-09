@@ -30,7 +30,7 @@ openstack volume backup create --name bkfull02-vl01 vl01
 <img src=https://i.imgur.com/9Q8OVqy.png>
 
 #### 2.2.2 Kiểm tra dưới hệ thống Ceph
-**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume
+**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume**
 
 ```sh
 rbd -p volumes_ssd ls - | grep 90010680-6737-4b19-b760-fdad69f55bff
@@ -42,7 +42,7 @@ rbd snap ls volumes_ssd/volume-90010680-6737-4b19-b760-fdad69f55bff
 ```
 <img src=https://i.imgur.com/UQG4xNk.png>
 
-**Kiểm tra pool `backups` và show `snapshot`
+**Kiểm tra pool `backups` và show `snapshot`**
 
 ```sh
 rbd -p backups ls - | grep 90010680-6737-4b19-b760-fdad69f55bff
@@ -58,7 +58,7 @@ Kết luận: Khi khởi tạo các bản `backup full` từ volume ban đầu, 
 ```sh
 openstack volume backup create --name bkincremental01frombkfull02-vl01 vl01 --incremental
 ```
-***Bản backup này sẽ là bản `incremental` so với bản `bk02-vl01`
+***Bản backup này sẽ là bản `incremental` so với bản `bk02-vl01`***
 
 <img src=https://i.imgur.com/iK4plbg.png>
 
@@ -67,19 +67,19 @@ openstack volume backup create --name bkincremental01frombkfull02-vl01 vl01 --in
 ```sh
 openstack volume backup create --name bkincremental02frombkfull02-vl01 vl01 --incremental
 ```
-***Bản backup này sẽ là bản `incremental` so với bản `bkincremental01frombkfull02-vl01`
+***Bản backup này sẽ là bản `incremental` so với bản `bkincremental01frombkfull02-vl01`***
 
 <img src=https://i.imgur.com/NwHBwtt.png>
 
 #### 2.4.2 Kiểm tra dưới hệ thống Ceph
-**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume
+**Kiểm tra pool `volumes_ssd` và show `snapshot` của volume**
 
 ```sh
 rbd snap ls volumes_ssd/volume-90010680-6737-4b19-b760-fdad69f55bff
 ```
 <img src=https://i.imgur.com/jfEy3kE.png>
 
-**Kiểm tra pool `backups` và show `snapshot`
+**Kiểm tra pool `backups` và show `snapshot`**
 
 ```sh
 rbd -p backups ls - | grep f9d22999-295d-417e-9c8c-e65c2e2d9eb9
